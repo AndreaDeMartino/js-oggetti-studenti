@@ -14,24 +14,46 @@
 <body class="u-montserrat">
 
 
+  <div class="app">
 
+    <div class="wrapper">
 
+      <!-- Chat Header -->
+      <header class="chat-header u-flex-center">
+        <h1>BOOLZAP LIGHT</h1>
+      </header>
+      
+      <!-- Chat Main -->
+      <main class="chat-main">
+        <!-- *** JS here *** -->
+      </main>
+      
+      <!-- Chat Footer -->
+      <footer class="chat-footer u-flex-center">
+        <input id="insert-message" type="text" placeholder="Inserisci un messaggio..">
+        <button class="send-button">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </footer>
 
-
-
-
-  
-
-
+    </div>
+  </div>
 
   <!-- HandleBars Template -->
-  <script id="entry-template" type="text/x-handlebars-template">
-    <div class="entry">
-      <h1>{{title}}</h1>
-      <div class="body">
-        {{body}}
+  <script id="message-template" type="text/x-handlebars-template">
+    
+    <div class="messages-row {{ type }}">
+      <div class="message">
+        <div class="text">
+          <h4>{{ text }}</h4>
+        </div>
+  
+        <div class="time">
+          <h5>{{ time }}</h5>
+        </div>
       </div>
     </div>
+
   </script>
 
 

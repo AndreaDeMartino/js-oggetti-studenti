@@ -1,26 +1,97 @@
 /* General Rules */
 
-
 /* Utility */
-.box{
-  height: 40px;
-  width: 40px;
+.sent .message{
+  background: #dcf8c0;
 }
 
-.red{
-background: red;
-}
-
-.blue{
-background: blue;
-}
-
-.yellow{
-background: yellow;
-}
-
-.green{
-background: green;
+.received .message{
+  background: #fff;
 }
 
 /* App */
+.app{
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper{
+  max-width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat Header */
+.chat-header{
+  height: 100px;
+  text-align: center;
+  background: #0F5C50;
+  color: #fff;
+}
+
+/* Chat Main */
+.chat-main{
+  flex-grow: 1;
+  background-image: url('../img/mine.jpg');
+}
+
+.message{
+  width: 200px;
+  margin: 10px;
+  border-radius: 7px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.messages-row.sent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.messages-row.received{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message h4{
+  padding: 10px;
+  font-weight: 400;
+}
+
+.message h5{
+  font-size: 10px;
+  font-weight: 300;
+  text-align: right;
+  padding: 0 10px 5px 0;
+}
+
+/* Chat Footer */
+.chat-footer{
+  height: 100px;
+  background: #fff;
+}
+
+#insert-message{
+  width: 80%;
+  height: 50%;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.send-button{
+  height: 50%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background: #eee;
+  border-radius: 0 3px 3px 0;
+}
