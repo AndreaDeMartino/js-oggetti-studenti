@@ -27,7 +27,7 @@
 
 /* Chat Header */
 .chat-header{
-  height: 100px;
+  min-height: 100px;
   text-align: center;
   background: #0F5C50;
   color: #fff;
@@ -36,6 +36,7 @@
 /* Chat Main */
 .chat-main{
   flex-grow: 1;
+  overflow-y: auto;
   background-image: url('../img/mine.jpg');
 }
 
@@ -73,7 +74,7 @@
 
 /* Chat Footer */
 .chat-footer{
-  height: 100px;
+  min-height: 100px;
   background: #fff;
 }
 
